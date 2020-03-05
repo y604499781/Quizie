@@ -8,5 +8,48 @@
       {"text":"Python", "correct": false },
       {"text":"Go", "correct": false }
     ]
+  },
+  {
+    "question": "In JavaScript, the keyword class is used to define an object.",
+    "possibleAnswers":
+    [
+      {"text":"True", "correct": true },
+      {"text":"False", "correct": false }
+    ]
+  },
+  {
+    "question": "Which one of these is an example of a JavaScript arrow function?",
+    "possibleAnswers":
+    [
+      {"text":"function() {}", "correct": false },
+      {"text":"function()", "correct": false },
+      {"text":"() => {}", "correct": true }
+    ]
+  },
+  {
+    "question": "The keyword const defines a variable whose value can be changed after being created.",
+    "possibleAnswers":
+    [
+      {"text":"True", "correct": false },
+      {"text":"False", "correct": true }
+    ]
+  },
+  {
+    "question": "Which JavaScript array function adds an entry to the end of an array?",
+    "possibleAnswers":
+    [
+      {"text":"pop()", "correct": false },
+      {"text":"map()", "correct": false },
+      {"text":"push()", "correct": true },
+      {"text":"filter()", "correct": false }
+    ]
+  },
+  {
+    "question": "Arrow functions bind the this keyword where the function is defined.",
+    "possibleAnswers":
+    [
+      {"text":"True", "correct": true },
+      {"text":"False", "correct": false }
+    ]
   }
 ]
