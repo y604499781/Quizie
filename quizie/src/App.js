@@ -5,7 +5,6 @@ import questions from './questions.json'
 const TITLE_STATE = 0
 const QUESTION_STATE = 1
 const TIME_LIMIT = 5
-const FINAL_STATE = 2
 
 
 class QuizQuestion extends React.Component {
@@ -32,19 +31,14 @@ class TitlePage extends React.Component{
   }
   nextQuestion(correct){
     console.log("BUTTON PRESSED")
-    this.timer = setInterval(() => this.countdown(), 1000)
     if(correct){
       this.setState({score: this.state.score+1})
     }
     if(this.state.currentQuestion === questions.length -1){
       console.log("DONE")
-      this.setState({
-        titleText: 'Restart Quiz',
-        currentState: FINAL_STATE,
-        score: this.state.score
-      })
     } else{
       clearInterval(this.timer)
+      this.timer = setInterval(() => this.countdown(), 1000)
       console.log(this.state.currentQuestion)  
       this.setState({
         titleText:"You answer X",
